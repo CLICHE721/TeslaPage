@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header 스타일 */
+#header {
+    background: #223c55;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#header .logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+#header .logo a {
+    display: block;
+    width: 60px;
+    height: auto;
+}
+
+#header .logo img {
+    margin-top: 20px;
+    width: 60px;
+    height: auto;
+}
+
+i.hidden {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+/* Left: GNB 메뉴 */
+#header .gnb {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header .gnb li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+#header .gnb li a:hover {
+    color: #007aff;
+}
+
+/* Right: Util 메뉴 (햄버거 메뉴 아이콘) */
+.util-menu {
+    display: flex;
+    align-items: center;
+}
+
+.util-menu a {
+    font-size: 1.8em;
+    color: #333;
+    text-decoration: none;
+}
+
+.util-menu a:hover {
+    color: #007aff;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    #header .gnb {
+        display: none;
+        /* 작은 화면에서는 nav 메뉴 숨기기 */
+    }
+
+    .util-menu a {
+        font-size: 1.5em;
+
+    }
+}
+
+.inner {
+    width: 100%;
+    height: 10rem;
+    margin: 0 auto;
+    background: #223c55;
+}
+
+/* 기본 레이아웃 스타일 */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.util-menu a {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Visual section 스타일 */
+.visual {
+    width: auto;
+    height: 600px;
+    background: url(../img/teslaMain.png) no-repeat 50%, 50% / cover fixed;
+    color: white;
+    text-align: center;
+    /* padding: 80px 20px; */
+}
+
+.visual-title h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.visual-title p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Layout content 스타일 */
+.layout-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.card-inner {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Card header 스타일 */
+.card-header {
+    margin-bottom: 40px;
+}
+
+.card-header .el-title p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007aff;
+    margin-bottom: 20px;
+}
+
+.card-header .el-decs p {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card-header .el-btn .cm--btn-more {
+    background-color: #007aff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.card-header .el-btn .cm--btn-more:hover {
+    background-color: #005bb5;
+}
+
+/* Swiper pagination 스타일 */
+.card-header .swiper-pagination {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card-header .swiper-pagination .bullet {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.card-header .swiper-pagination .bullet:hover {
+    background-color: #007aff;
+    color: white;
+}
+
+/* Swiper container 스타일 */
+.swiper-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-slide {
+    flex: 1;
+    min-width: 280px;
+    margin: 0 10px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide-active {
+    transform: scale(1.1);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.el-tit p {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .card-header .el-title p {
+        font-size: 1.8em;
+    }
+
+    .card-header .el-decs p {
+        font-size: 1.1em;
+    }
+
+    .swiper-slide {
+        min-width: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .visual-title h1 {
+        font-size: 2em;
+    }
+
+    .visual-title p {
+        font-size: 1.2em;
+    }
+
+    .card-header .el-title p {
+        font-size: 1.5em;
+    }
+
+    .card-header .el-decs p {
+        font-size: 1em;
+    }
+
+    .swiper-slide {
+        min-width: 200px;
+    }
+}

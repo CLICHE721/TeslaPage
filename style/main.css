@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: #210303;
+}
+
+
+.logo a {
+    display: block;
+    width: 4.3rem;
+    height: 5.2rem;
+    background: url(../img/LOGO.png) no-repeat 50% / cover;
+}
+
+.inner {
+    width: 150rem;
+    margin: 0 auto;
+    background: rgb(20, 40, 59);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo a {
+    width: 5rem;
+    height: 7rem;
+}
+
+i.hidden {
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    font: 1.6rem/1.5 Pretendard, sans-serif;
+    color: var(--text-color);
+    text-transform: capitalize;
+    word-break: keep-all;
+}
+
+
+ul.gnb {
+    gap: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    background: #9eb5ff;
+}
+
+.gnb li a {
+    display: block;
+    padding: 1rem 1.8rem;
+    /* border: 1px solid #ffffff; */
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+
+
+.visual {
+    width: 100%;
+    margin: 0 0;
+    height: 60rem;
+    background: url(../img/teslaMain.png) no-repeat 50%, 50% / cover fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.visual-title {
+    /* height: 700px; */
+    color: #fff;
+
+    text-align: center;
+
+}
+
+.figure {
+
+    background: #000;
+}
+
+.layout-content {
+    justify-content: center;
+
+}
+
+
+/* component */
+.card-inner {
+    border: 1px solid #000;
+
+}
+
+.card-container {
+    display: flex;
+    margin: 70px;
+    background: #cccccc;
+
+}
+
+.card-header {
+    width: 50%;
+    margin: 2rem 5rem;
+    /* padding: 20px; */
+    position: relative;
+    height: 500px;
+    background: #cfaaaa;
+}
+
+.el-title {
+    position: absolute;
+    top: 30px;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.el-decs {
+    position: absolute;
+    top: 80px;
+    /* 하단에서 60px 위에 위치하도록 설정 */
+    padding: 20px;
+
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    margin: 5rem 2rem;
+}
+
+.el-btn {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    position: inherit;
+}
+
+.card-carousel {
+    position: relative;
+    width: 50%;
+    /* display: flex; */
+    background: #afc2c7;
+}
+
+
+
+.card-title {
+    /* position: absolute; */
+
+}
+
+.el-tit {}
+
+.is-po {
+    position: absolute;
+    bottom: 40px;
+
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: right;
+    color: #fff;
+
+}
+
+.swiper-container {
+    position: relative;
+
+    margin: 4rem 3rem;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*  */
+.swiper-slide {}
+
+/*  */
+.swiper-slide .swiper-slide-active {}
+
+/*  */
+.swiper-slide .swiper-slide-next {}
+
+.visual-image img {
+
+    width: auto;
+    height: 500px;
+
+
+}
