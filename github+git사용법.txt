@@ -1,0 +1,17 @@
+* 처음 세팅 할 때 (집에서)
+
+git config --global user.email "(깃허브 계정을 가입한 이메일)"
+git config --global user.name "(깃허브 닉네임)"
+
+
+* 해당 폴더 내부에 들어가서 빈공간에 우클릭을 해서
+
+open git bash here을 누르고
+
+거기서 
+
+git add . 
+git commit -m "(실제 커밋 메세지)"
+git push
+
+-> 이걸 한번에 올려도 되고, 1개씩 해도됨
