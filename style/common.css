@@ -112,45 +112,45 @@ body {
 
 /* Visual 섹션 반응형 수정 */
 @media (max-width: 1024px) {
-    .visual {
+    .card {
         padding: 60px 20px;
     }
 
-    .visual-title h1 {
+    .card-title h1 {
         font-size: 2.5em;
     }
 
-    .visual-title p {
+    .card-title p {
         font-size: 1.3em;
         margin-top: 15px;
     }
 }
 
 @media (max-width: 768px) {
-    .visual {
+    .card {
         padding: 50px 15px;
     }
 
-    .visual-title h1 {
+    .card-title h1 {
         font-size: 2em;
     }
 
-    .visual-title p {
+    .card-title p {
         font-size: 1.1em;
         margin-top: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .visual {
+    .card {
         padding: 40px 10px;
     }
 
-    .visual-title h1 {
+    .card-title h1 {
         font-size: 1.8em;
     }
 
-    .visual-title p {
+    .card-title p {
         font-size: 1em;
         margin-top: 8px;
     }

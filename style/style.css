@@ -5,6 +5,8 @@ a {
     color: inherit;
 }
 
+
+
 /* Header 스타일 */
 #header {
     background: #223c55;
@@ -15,13 +17,15 @@ a {
 }
 
 #header .inner {
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px 20px;
 }
+
 
 #header .logo {
     display: flex;
@@ -32,13 +36,14 @@ a {
 #header .logo a {
     display: block;
     width: 60px;
-    height: auto;
+
 }
 
 #header .logo img {
+    margin: 0;
     margin-top: 20px;
     width: 60px;
-    height: auto;
+
 }
 
 i.hidden {
@@ -68,31 +73,18 @@ i.hidden {
 
 /* Right: Util 메뉴 (햄버거 메뉴 아이콘) */
 .util-menu {
-    display: flex;
+    width: 6rem;
     align-items: center;
 }
 
 .util-menu a {
-    font-size: 1.8em;
+    font-size: 22px;
     color: #333;
     text-decoration: none;
 }
 
 .util-menu a:hover {
     color: #007aff;
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-    #header .gnb {
-        display: none;
-        /* 작은 화면에서는 nav 메뉴 숨기기 */
-    }
-
-    .util-menu a {
-        font-size: 1.5em;
-
-    }
 }
 
 .inner {
@@ -118,31 +110,136 @@ body {
     margin-left: 20px;
 }
 
-/* Visual section 스타일 */
-.visual {
-    width: auto;
-    height: 600px;
-    background: url(../img/teslaMain.png) no-repeat 50%, 50% / cover fixed;
-    color: white;
+/* swiper */
+.top-slide-wrap {
+    width: 100%;
+    height: 100vh;
+    /* 화면 높이에 꽉 차도록 설정 */
+    position: relative;
+    overflow: hidden;
+    /* 내용이 넘칠 경우 숨김 */
+}
+
+.top-slider {
+    width: 100%;
+    height: 100%;
+    /* 슬라이더의 높이 설정 */
+}
+
+.swiper-wrapper {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* 슬라이더의 높이 설정 */
+    object-fit: cover;
+
+}
+
+.swiper-slide {
+    width: 100%;
+    /* 슬라이드가 100% 너비를 차지 */
+    height: 100%;
+    /* 슬라이드가 100% 높이를 차지 */
+    display: flex;
+    /* 자식 요소를 flex로 배치 */
+    justify-content: center;
+
+
+}
+
+/* 이미지 위에 위치한 텍스트 중앙 배치 */
+.visual-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
     text-align: center;
-    /* padding: 80px 20px; */
+    z-index: 5;
 }
 
 .visual-title h1 {
-    font-size: 3em;
-    margin: 0;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0 0;
+
 }
 
 .visual-title p {
-    font-size: 1.5em;
-    margin-top: 20px;
+    font-size: 2.5rem;
+    margin: 0 0;
 }
 
+/* Pagination (하단의 점) 스타일 */
+.swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    /* 슬라이드 하단에서 20px 떨어지게 배치 */
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    /* 우선순위 부여 */
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #007aff;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ffffff;
+    opacity: 1;
+}
+
+/* Navigation (좌우 네비게이션 버튼) 스타일 */
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    /* 슬라이드 중앙에 배치 */
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    /* 버튼 배경 반투명 처리 */
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* 우선순위 부여 */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* 오른쪽, 왼쪽 버튼 위치 조정 */
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+
+
+
+
+
 /* Layout content 스타일 */
-.layout-content {
-    max-width: 1200px;
+.card-content {
+    max-width: 100%;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 10px 50px;
 }
 
 .card-inner {
@@ -214,20 +311,20 @@ body {
     color: white;
 }
 
-/* Swiper container 스타일 */
-.swiper-container {
+/* Card container 스타일 */
+.card-container {
     position: relative;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.swiper-wrapper {
+.card-wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.swiper-slide {
+.card-slide {
     flex: 1;
     min-width: 280px;
     margin: 0 10px;
@@ -238,13 +335,13 @@ body {
     transition: transform 0.3s ease;
 }
 
-.swiper-slide-active {
+/* .card-slide-active {
     transform: scale(1.1);
-}
+} */
 
-.swiper-slide img {
+.card-slide img {
     width: 100%;
-    height: auto;
+    height: 200px;
 }
 
 .card-title {
@@ -262,6 +359,16 @@ body {
 
 /* 반응형 스타일 */
 @media (max-width: 768px) {
+    #header .gnb {
+        display: none;
+        /* 작은 화면에서는 nav 메뉴 숨기기 */
+    }
+
+    .util-menu a {
+        font-size: 1.5em;
+
+    }
+
     .card-header .el-title p {
         font-size: 1.8em;
     }
@@ -270,17 +377,17 @@ body {
         font-size: 1.1em;
     }
 
-    .swiper-slide {
+    .card-slide {
         min-width: 240px;
     }
 }
 
 @media (max-width: 480px) {
-    .visual-title h1 {
+    .card-title h1 {
         font-size: 2em;
     }
 
-    .visual-title p {
+    .card-title p {
         font-size: 1.2em;
     }
 
@@ -292,7 +399,7 @@ body {
         font-size: 1em;
     }
 
-    .swiper-slide {
+    .card-slide {
         min-width: 200px;
     }
 }

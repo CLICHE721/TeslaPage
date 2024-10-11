@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../project/Tesla/01"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TeslaPage"
+	}
+}

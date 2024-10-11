@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- <link rel="stylesheet" href="../style/main.css"> -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/common.css">
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <script src="./javascript/jquery-3.7.1.min.js"></script>
+    <script src="./javascript/script.js"></script>
     <title>Tesla</title>
 </head>
 
@@ -43,24 +42,55 @@
         </div>
     </header>
 
-
-    <section class="visual">
-        <div class="visual-title">
-            <h1><strong>Tesla경험하기</strong></h1>
-            <p>지금 바로 시승 신청해 보세요</p>
+    <!-- s: swiper -->
+    <section class="top-slide-wrap">
+        <div class="swiper top-slider">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./img/Roadster1.png" alt="Roadster 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/Cybertruck1.png" alt="Cybertruck 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/Model Y.png" alt="Model Y">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/Models 3.png" alt="Models 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/Models Y1.png" alt="Models Y1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/tesla-model3-1.jpeg" alt="Tesla Model 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/teslaMain.png" alt="Tesla Main">
+                </div>
+            </div>
+            <div class="visual-title">
+                <h1><strong>Tesla 경험하기</strong></h1>
+                <p>지금 바로 시승 신청해 보세요</p>
+            </div>
+            <!-- Swiper Pagination & Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
-    <!-- s: layout-content 1 -->
-    <section class="layout-content">
+    <!-- //:e swiper -->
+
+    <!-- s: card-content 1 -->
+    <section class="card-content">
         <!-- component -->
         <div class="card-inner">
             <div class="card-container">
-
                 <!--  -->
                 <div class="card-header">
                     <div class="el-title">
-                        <p class="is-pc">Models S</p>
-                        <p class="is-mo">Models S</p>
+                        <p class="is-pc">Model S</p>
+                        <p class="is-mo">Model S</p>
                     </div>
 
                     <div class="el-decs">
@@ -77,49 +107,48 @@
                     <div class="el-btn">
                         <a href="#" class="cm--btn-more">자세히 보기 ></a>
                     </div>
-
                 </div>
 
                 <!-- image card -->
                 <div class="card-carousel">
-                    <div class="swiper-container">
+                    <div class="card-container">
                         <!-- card -->
 
                         <!-- active -->
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-slide-active">
-                                <div class="visual-image">
-                                    <img src="./img/Model-S-4.jpg" a href="Models S-1"></a>
+                        <div class="card-wrapper">
+                            <div class="card-slide card-slide-active">
+                                <div class="card-image">
+                                    <img src="./img/Model-S-4.jpg" alt="Model S 1">
                                 </div>
                                 <div class="card-title">
                                     <div class="el-tit">
-                                        <p class="is-po">미래지향적 인테리어</p>
+                                        <p class="is-pc">미래지향적 인테리어</p>
                                         <p class="is-mo">미래지향적 인테리어</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- next -->
-                            <div class="swiper-slide swiper-slide-next">
-                                <div class="visual-image">
-                                    <img src="./img/Model-S-5.jpg" a href="Models S-2"></a>
+                            <div class="card-slide card-slide-next">
+                                <div class="card-image">
+                                    <img src="./img/Model-S-5.jpg" alt="Model S 2">
                                 </div>
                                 <div class="card-title">
                                     <div class="el-tit">
-                                        <p class="is-po">루디크러스를 넘어</p>
+                                        <p class="is-pc">루디크러스를 넘어</p>
                                         <p class="is-mo">루디크러스를 넘어</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- 3 -->
-                            <div class="swiper-slide">
-                                <div class="visual-image">
-                                    <img src="./img/Model-S-5.jpg" a href="Models S-2"></a>
+                            <div class="card-slide card-slide-next">
+                                <div class="card-image">
+                                    <img src="./img/Model-S-5.jpg" alt="Model S 3">
                                 </div>
                                 <div class="card-title">
                                     <div class="el-tit">
-                                        <p class="is-po">높은 충격 보호</p>
+                                        <p class="is-pc">높은 충격 보호</p>
                                         <p class="is-mo">높은 충격 보호</p>
                                     </div>
                                 </div>
@@ -130,464 +159,471 @@
                 </div>
             </div>
         </div>
-        <!-- //:e layout-content 1 -->
+    </section>
+    <!-- //:e card-content 1 -->
 
-        <!-- s: layout-content 2 -->
-        <section class="layout-content">
-            <!-- component -->
-            <div class="card-inner">
-                <div class="card-container">
 
-                    <!--  -->
-                    <div class="card-bg">
 
+    <!-- s: card-content 2 -->
+    <section class="card-content">
+        <!-- component -->
+        <div class="card-inner">
+            <div class="card-container">
+
+                <!--  -->
+                <div class="card-bg">
+
+                </div>
+
+                <!--  -->
+                <div class="card-header">
+                    <div class="el-title">
+                        <p class="is-pc">Models 3</p>
+                        <p class="is-mo">Models 3</p>
                     </div>
 
-                    <!--  -->
-                    <div class="card-header">
-                        <div class="el-title">
-                            <p class="is-pc">Models 3</p>
-                            <p class="is-mo">Models 3</p>
-                        </div>
-
-                        <div class="el-decs">
-                            <p class="is-pc">
-                                Model 3는 에너지 흡수 사이드 실, 전복 위험을 줄이기 위해 차량 하단에 장착된 강화 배터리 팩, 차량 무게보다 무거운 하중을 견딜 수 있는 금속 차체
-                                구조 등 다른 차량에 도입된 안전 기능들이 그대로 적용되어 있습니다. 자동 긴급 제동과 같은 능동형 안전 기능은 기본으로 제공됩니다.
-                            </p>
-                            <p class="is-mo">
-                                Model 3는 에너지 흡수 사이드 실, 전복 위험을 줄이기 위해 차량 하단에 장착된 강화 배터리 팩, 차량 무게보다 무거운 하중을 견딜 수 있는 금속 차체
-                                구조 등 다른 차량에 도입된 안전 기능들이 그대로 적용되어 있습니다. 자동 긴급 제동과 같은 능동형 안전 기능은 기본으로 제공됩니다.
-                            </p>
-                        </div>
-
-                        <div class="el-btn">
-                            <a href="#" class="cm--btn-more">자세히 보기 ></a>
-                        </div>
+                    <div class="el-decs">
+                        <p class="is-pc">
+                            Model 3는 에너지 흡수 사이드 실, 전복 위험을 줄이기 위해 차량 하단에 장착된 강화 배터리 팩, 차량 무게보다 무거운 하중을 견딜 수 있는 금속 차체
+                            구조 등 다른 차량에 도입된 안전 기능들이 그대로 적용되어 있습니다. 자동 긴급 제동과 같은 능동형 안전 기능은 기본으로 제공됩니다.
+                        </p>
+                        <p class="is-mo">
+                            Model 3는 에너지 흡수 사이드 실, 전복 위험을 줄이기 위해 차량 하단에 장착된 강화 배터리 팩, 차량 무게보다 무거운 하중을 견딜 수 있는 금속 차체
+                            구조 등 다른 차량에 도입된 안전 기능들이 그대로 적용되어 있습니다. 자동 긴급 제동과 같은 능동형 안전 기능은 기본으로 제공됩니다.
+                        </p>
                     </div>
 
-                    <!-- image card -->
-                    <div class="card-carousel">
-                        <div class="swiper-container">
-                            <!-- card -->
+                    <div class="el-btn">
+                        <a href="#" class="cm--btn-more">자세히 보기 ></a>
+                    </div>
+                </div>
 
-                            <!-- active -->
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide swiper-slide-active">
-                                    <div class="visual-image">
-                                        <img src="./img/Models 3.png" a href="Models 3-1"></a>
-                                    </div>
-                                    <div class="card-title">
-                                        <div class="el-tit">
-                                            <p class="is-po">Performance 브레이크</p>
-                                            <p class="is-mo">Performance 브레이크</p>
-                                        </div>
+                <!-- image card -->
+                <div class="card-carousel">
+                    <div class="card-container">
+                        <!-- card -->
+
+                        <!-- active -->
+                        <div class="card-wrapper">
+                            <div class="card-slide card-slide-active">
+                                <div class="card-image">
+                                    <img src="./img/Models 3.png" a href="Models 3-1"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">Performance 브레이크</p>
+                                        <p class="is-mo">Performance 브레이크</p>
                                     </div>
                                 </div>
-
-                                <!-- next -->
-                                <div class="swiper-slide swiper-slide-next">
-                                    <div class="visual-image">
-                                        <img src="./img/tesla-model3-3.jpg" a href="Models S-2"></a>
-                                    </div>
-                                    <div class="card-title">
-                                        <div class="el-tit">
-                                            <p class="is-po">반응성이 뛰어난 핸들링</p>
-                                            <p class="is-mo">반응성이 뛰어난 핸들링</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 3 -->
-                                <div class="swiper-slide">
-                                    <div class="visual-image">
-                                        <img src="./img/tesla-model3-2.jpg" a href="Models S-2"></a>
-                                    </div>
-                                    <div class="card-title">
-                                        <div class="el-tit">
-                                            <p class="is-po">첨단 공기역학</p>
-                                            <p class="is-mo">첨단 공기역학</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end -->
                             </div>
+
+                            <!-- next -->
+                            <div class="card-slide card-slide-next">
+                                <div class="card-image">
+                                    <img src="./img/tesla-model3-3.jpg" a href="Models S-2"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">반응성이 뛰어난 핸들링</p>
+                                        <p class="is-mo">반응성이 뛰어난 핸들링</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="card-slide">
+                                <div class="card-image">
+                                    <img src="./img/tesla-model3-2.jpg" a href="Models S-2"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">첨단 공기역학</p>
+                                        <p class="is-mo">첨단 공기역학</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- //:e layout-content 2 -->
+        </div>
+    </section>
+    <!-- //:e card-content 2 -->
 
-            <!-- s: layout-content 3 -->
-            <section class="layout-content">
-                <!-- component -->
-                <div class="card-inner">
+    <!-- s: card-content 3 -->
+    <section class="card-content">
+        <!-- component -->
+        <div class="card-inner">
+            <div class="card-container">
+
+                <!--  -->
+                <div class="card-bg">
+
+                </div>
+
+                <!--  -->
+                <div class="card-header">
+                    <div class="el-title">
+                        <p class="is-pc">Models X</p>
+                        <p class="is-mo">Models X</p>
+                    </div>
+
+                    <div class="el-decs">
+                        <p class="is-pc">
+                            Model X의 플랫폼은 배터리 테크놀로지와 통합된 파워트레인으로 타의 추종을 불허하는 압도적인 성능, 주행 가능 거리 및 효율성을 발휘하도록
+                            설계되었습니다. 더 효율적인 열 관리가 가능하도록 새롭게 설계된 배터리 모듈과 팩은 더욱 빠른 충전과 모든 조건에서 한층 더 높은 출력 및 내구성을
+                            제공합니다.
+                        </p>
+                        <p class="is-mo">
+                            Model X의 플랫폼은 배터리 테크놀로지와 통합된 파워트레인으로 타의 추종을 불허하는 압도적인 성능, 주행 가능 거리 및 효율성을 발휘하도록
+                            설계되었습니다. 더 효율적인 열 관리가 가능하도록 새롭게 설계된 배터리 모듈과 팩은 더욱 빠른 충전과 모든 조건에서 한층 더 높은 출력 및 내구성을
+                            제공합니다.
+                        </p>
+                    </div>
+
+                    <div class="el-btn">
+                        <a href="#" class="cm--btn-more">자세히 보기 ></a>
+                    </div>
+
+                </div>
+
+                <!-- image card -->
+                <div class="card-carousel">
                     <div class="card-container">
+                        <!-- card -->
 
-                        <!--  -->
-                        <div class="card-bg">
-
-                        </div>
-
-                        <!--  -->
-                        <div class="card-header">
-                            <div class="el-title">
-                                <p class="is-pc">Models X</p>
-                                <p class="is-mo">Models X</p>
-                            </div>
-
-                            <div class="el-decs">
-                                <p class="is-pc">
-                                    Model X의 플랫폼은 배터리 테크놀로지와 통합된 파워트레인으로 타의 추종을 불허하는 압도적인 성능, 주행 가능 거리 및 효율성을 발휘하도록
-                                    설계되었습니다. 더 효율적인 열 관리가 가능하도록 새롭게 설계된 배터리 모듈과 팩은 더욱 빠른 충전과 모든 조건에서 한층 더 높은 출력 및 내구성을
-                                    제공합니다.
-                                </p>
-                                <p class="is-mo">
-                                    Model X의 플랫폼은 배터리 테크놀로지와 통합된 파워트레인으로 타의 추종을 불허하는 압도적인 성능, 주행 가능 거리 및 효율성을 발휘하도록
-                                    설계되었습니다. 더 효율적인 열 관리가 가능하도록 새롭게 설계된 배터리 모듈과 팩은 더욱 빠른 충전과 모든 조건에서 한층 더 높은 출력 및 내구성을
-                                    제공합니다.
-                                </p>
-                            </div>
-
-                            <div class="el-btn">
-                                <a href="#" class="cm--btn-more">자세히 보기 ></a>
-                            </div>
-
-                        </div>
-
-                        <!-- image card -->
-                        <div class="card-carousel">
-                            <div class="swiper-container">
-                                <!-- card -->
-
-                                <!-- active -->
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-slide-active">
-                                        <div class="visual-image">
-                                            <img src="./img/Models X.png" a href="ModelsX-1"></a>
-                                        </div>
-                                        <div class="card-title">
-                                            <div class="el-tit">
-                                                <p class="is-po">aaa AAA aaa</p>
-                                                <p class="is-mo">bbb BBB bbb</p>
-                                            </div>
-                                        </div>
+                        <!-- active -->
+                        <div class="card-wrapper">
+                            <div class="card-slide card-slide-active">
+                                <div class="card-image">
+                                    <img src="./img/Models X.png" a href="ModelsX-1"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">aaa AAA aaa</p>
+                                        <p class="is-mo">bbb BBB bbb</p>
                                     </div>
-
-                                    <!-- next -->
-                                    <div class="swiper-slide swiper-slide-next">
-                                        <div class="visual-image">
-                                            <img src="./img/Models X2.png" a href="ModelsX-2"></a>
-                                        </div>
-                                        <div class="card-title">
-                                            <div class="el-tit">
-                                                <p class="is-po">ccc CCC ccc</p>
-                                                <p class="is-mo">ddd DDD ddd</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 3 -->
-                                    <div class="swiper-slide">
-                                        <div class="visual-image">
-                                            <img src="./img/Models X.png" a href="ModelsX-1"></a>
-                                        </div>
-                                        <div class="card-title">
-                                            <div class="el-tit">
-                                                <p class="is-po">eee EEE eee</p>
-                                                <p class="is-mo">fff FFF fff</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end -->
                                 </div>
                             </div>
+
+                            <!-- next -->
+                            <div class="card-slide card-slide-next">
+                                <div class="card-image">
+                                    <img src="./img/Models X2.png" a href="ModelsX-2"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">ccc CCC ccc</p>
+                                        <p class="is-mo">ddd DDD ddd</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="card-slide">
+                                <div class="card-image">
+                                    <img src="./img/Models X.png" a href="ModelsX-1"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">eee EEE eee</p>
+                                        <p class="is-mo">fff FFF fff</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
                         </div>
                     </div>
                 </div>
-                <!-- //:e layout-content 3 -->
+            </div>
+        </div>
+    </section>
+    <!-- //:e card-content 3 -->
 
-                <!-- s: layout-content 4 -->
-                <section class="layout-content">
-                    <!-- component -->
-                    <div class="card-inner">
-                        <div class="card-container">
+    <!-- s: card-content 4 -->
+    <section class="card-content">
+        <!-- component -->
+        <div class="card-inner">
+            <div class="card-container">
 
-                            <!--  -->
-                            <div class="card-bg">
+                <!--  -->
+                <div class="card-bg">
 
-                            </div>
+                </div>
 
-                            <!--  -->
-                            <div class="card-header">
-                                <div class="el-title">
-                                    <p class="is-pc">Models Y</p>
-                                    <p class="is-mo">Models Y</p>
+                <!--  -->
+                <div class="card-header">
+                    <div class="el-title">
+                        <p class="is-pc">Models Y</p>
+                        <p class="is-mo">Models Y</p>
+                    </div>
+
+                    <div class="el-decs">
+                        <p class="is-pc">
+                            이제 장거리 여행을 떠날 수 있습니다. 한 번 충전으로 최대 468km*에 달하는 거리를 주행할 수 있어 Model Y는 여행하는 동안 휴식이
+                            필요 없습니다. 듀얼 모터 상시 사륜구동으로 어떤 도로 상황에서도 주행이 가능합니다.
+                        </p>
+                        <p class="is-mo">
+                            이제 장거리 여행을 떠날 수 있습니다. 한 번 충전으로 최대 468km*에 달하는 거리를 주행할 수 있어 Model Y는 여행하는 동안 휴식이
+                            필요 없습니다. 듀얼 모터 상시 사륜구동으로 어떤 도로 상황에서도 주행이 가능합니다.
+                        </p>
+                    </div>
+
+                    <div class="el-btn">
+                        <a href="#" class="cm--btn-more">자세히 보기 ></a>
+                    </div>
+                </div>
+
+                <!-- image card -->
+                <div class="card-carousel">
+                    <div class="card-container">
+                        <!-- card -->
+
+                        <!-- active -->
+                        <div class="card-wrapper">
+                            <div class="card-slide card-slide-active">
+                                <div class="card-image">
+                                    <img src="./img/Models Y2.png" a href="ModelsY-2"></a>
                                 </div>
-
-                                <div class="el-decs">
-                                    <p class="is-pc">
-                                        이제 장거리 여행을 떠날 수 있습니다. 한 번 충전으로 최대 468km*에 달하는 거리를 주행할 수 있어 Model Y는 여행하는 동안 휴식이
-                                        필요 없습니다. 듀얼 모터 상시 사륜구동으로 어떤 도로 상황에서도 주행이 가능합니다.
-                                    </p>
-                                    <p class="is-mo">
-                                        이제 장거리 여행을 떠날 수 있습니다. 한 번 충전으로 최대 468km*에 달하는 거리를 주행할 수 있어 Model Y는 여행하는 동안 휴식이
-                                        필요 없습니다. 듀얼 모터 상시 사륜구동으로 어떤 도로 상황에서도 주행이 가능합니다.
-                                    </p>
-                                </div>
-
-                                <div class="el-btn">
-                                    <a href="#" class="cm--btn-more">자세히 보기 ></a>
-                                </div>
-                            </div>
-
-                            <!-- image card -->
-                            <div class="card-carousel">
-                                <div class="swiper-container">
-                                    <!-- card -->
-
-                                    <!-- active -->
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide swiper-slide-active">
-                                            <div class="visual-image">
-                                                <img src="./img/Models Y2.png" a href="ModelsY-2"></a>
-                                            </div>
-                                            <div class="card-title">
-                                                <div class="el-tit">
-                                                    <p class="is-po">aaa AAA aaa</p>
-                                                    <p class="is-mo">bbb BBB bbb</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- next -->
-                                        <div class="swiper-slide swiper-slide-next">
-                                            <div class="visual-image">
-                                                <img src="./img/Model Y.png" a href="ModelsY-1"></a>
-                                            </div>
-                                            <div class="card-title">
-                                                <div class="el-tit">
-                                                    <p class="is-po">ccc CCC ccc</p>
-                                                    <p class="is-mo">ddd DDD ddd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- 3 -->
-                                        <div class="swiper-slide">
-                                            <div class="visual-image">
-                                                <img src="./img/Models Y2.png" a href="ModelsY-2"></a>
-                                            </div>
-                                            <div class="card-title">
-                                                <div class="el-tit">
-                                                    <p class="is-po">eee EEE eee</p>
-                                                    <p class="is-mo">fff FFF fff</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end -->
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">aaa AAA aaa</p>
+                                        <p class="is-mo">bbb BBB bbb</p>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- next -->
+                            <div class="card-slide card-slide-next">
+                                <div class="card-image">
+                                    <img src="./img/Model Y.png" a href="ModelsY-1"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">ccc CCC ccc</p>
+                                        <p class="is-mo">ddd DDD ddd</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="card-slide">
+                                <div class="card-image">
+                                    <img src="./img/Models Y2.png" a href="ModelsY-2"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">eee EEE eee</p>
+                                        <p class="is-mo">fff FFF fff</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
                         </div>
                     </div>
-                    <!-- //:e layout-content 4 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //:e card-content 4 -->
 
-                    <!-- s: layout-content 5 -->
-                    <section class="layout-content">
-                        <!-- component -->
-                        <div class="card-inner">
-                            <div class="card-container">
+    <!-- s: card-content 5 -->
+    <section class="card-content">
+        <!-- component -->
+        <div class="card-inner">
+            <div class="card-container">
 
-                                <!--  -->
-                                <div class="card-bg">
+                <!--  -->
+                <div class="card-bg">
 
+                </div>
+
+                <!--  -->
+                <div class="card-header">
+                    <div class="el-title">
+                        <p class="is-pc">Roadster</p>
+                        <p class="is-mo">Roadster</p>
+                    </div>
+
+                    <div class="el-decs">
+                        <p class="is-pc">
+                            공기역학적 효율과 성능을 모두 고려한 디자인.<br>
+                            순수 전기 구동 슈퍼카인 Roadster는 공기역학 엔지니어링의 잠재력을 극대화함으로써 기록적인 성능과 효율성을 실현합니다.
+                        </p>
+                        <p class="is-mo">
+                            공기역학적 효율과 성능을 모두 고려한 디자인.<br>
+                            순수 전기 구동 슈퍼카인 Roadster는 공기역학 엔지니어링의 잠재력을 극대화함으로써 기록적인 성능과 효율성을 실현합니다.
+                    </div>
+
+                    <div class="el-btn">
+                        <a href="#" class="cm--btn-more">자세히 보기 ></a>
+                    </div>
+
+                </div>
+
+                <!-- image card -->
+                <div class="card-carousel">
+                    <div class="card-container">
+                        <!-- card -->
+
+                        <!-- active -->
+                        <div class="card-wrapper">
+                            <div class="card-slide card-slide-active">
+                                <div class="card-image">
+                                    <img src="./img/Roadster2.png" a href="Roadster-2"></a>
                                 </div>
-
-                                <!--  -->
-                                <div class="card-header">
-                                    <div class="el-title">
-                                        <p class="is-pc">Roadster</p>
-                                        <p class="is-mo">Roadster</p>
-                                    </div>
-
-                                    <div class="el-decs">
-                                        <p class="is-pc">
-                                            공기역학적 효율과 성능을 모두 고려한 디자인.<br>
-                                            순수 전기 구동 슈퍼카인 Roadster는 공기역학 엔지니어링의 잠재력을 극대화함으로써 기록적인 성능과 효율성을 실현합니다.
-                                        </p>
-                                        <p class="is-mo">
-                                            공기역학적 효율과 성능을 모두 고려한 디자인.<br>
-                                            순수 전기 구동 슈퍼카인 Roadster는 공기역학 엔지니어링의 잠재력을 극대화함으로써 기록적인 성능과 효율성을 실현합니다.
-                                    </div>
-
-                                    <div class="el-btn">
-                                        <a href="#" class="cm--btn-more">자세히 보기 ></a>
-                                    </div>
-
-                                </div>
-
-                                <!-- image card -->
-                                <div class="card-carousel">
-                                    <div class="swiper-container">
-                                        <!-- card -->
-
-                                        <!-- active -->
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide swiper-slide-active">
-                                                <div class="visual-image">
-                                                    <img src="./img/Roadster2.png" a href="Roadster-2"></a>
-                                                </div>
-                                                <div class="card-title">
-                                                    <div class="el-tit">
-                                                        <p class="is-po">aaa AAA aaa</p>
-                                                        <p class="is-mo">bbb BBB bbb</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- next -->
-                                            <div class="swiper-slide swiper-slide-next">
-                                                <div class="visual-image">
-                                                    <img src="./img/Roadster1.png" a href="Roadster-1"></a>
-                                                </div>
-                                                <div class="card-title">
-                                                    <div class="el-tit">
-                                                        <p class="is-po">ccc CCC ccc</p>
-                                                        <p class="is-mo">ddd DDD ddd</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- 3 -->
-                                            <div class="swiper-slide">
-                                                <div class="visual-image">
-                                                    <img src="./img/Roadster2.png" a href="Roadster-2"></a>
-                                                </div>
-                                                <div class="card-title">
-                                                    <div class="el-tit">
-                                                        <p class="is-po">eee EEE eee</p>
-                                                        <p class="is-mo">fff FFF fff</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- end -->
-                                        </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">aaa AAA aaa</p>
+                                        <p class="is-mo">bbb BBB bbb</p>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- next -->
+                            <div class="card-slide card-slide-next">
+                                <div class="card-image">
+                                    <img src="./img/Roadster1.png" a href="Roadster-1"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">ccc CCC ccc</p>
+                                        <p class="is-mo">ddd DDD ddd</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="card-slide">
+                                <div class="card-image">
+                                    <img src="./img/Roadster2.png" a href="Roadster-2"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">eee EEE eee</p>
+                                        <p class="is-mo">fff FFF fff</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
                         </div>
-                        <!-- //:e layout-content 5 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //:e card-content 5 -->
 
-                        <!-- s: layout-content 6 -->
-                        <section class="layout-content">
-                            <!-- component -->
-                            <div class="card-inner">
-                                <div class="card-container">
+    <!-- s: card-content 6 -->
+    <section class="card-content">
+        <!-- component -->
+        <div class="card-inner">
+            <div class="card-container">
 
-                                    <!--  -->
-                                    <div class="card-bg">
+                <!--  -->
+                <div class="card-bg">
 
-                                    </div>
+                </div>
 
-                                    <!--  -->
-                                    <div class="card-header">
-                                        <div class="el-title">
-                                            <p class="is-pc">Cybertruck</p>
-                                            <p class="is-mo">Cybertruck</p>
-                                        </div>
+                <!--  -->
+                <div class="card-header">
+                    <div class="el-title">
+                        <p class="is-pc">Cybertruck</p>
+                        <p class="is-mo">Cybertruck</p>
+                    </div>
 
-                                        <div class="el-decs">
-                                            <p class="is-pc">
+                    <div class="el-decs">
+                        <p class="is-pc">
 
-                                                지구를 위한 설계
-                                                어디든 갈 수 있는 견고한 내구성 305mm의 트래블과 406mm의 최저 지상고를 보장하는 전자 어댑티브 에어 서스펜션이 있기에
-                                                어떤 주행 환경에서도 거뜬합니다.
-                                            </p>
-                                            <p class="is-mo">
+                            지구를 위한 설계
+                            어디든 갈 수 있는 견고한 내구성 305mm의 트래블과 406mm의 최저 지상고를 보장하는 전자 어댑티브 에어 서스펜션이 있기에
+                            어떤 주행 환경에서도 거뜬합니다.
+                        </p>
+                        <p class="is-mo">
 
-                                                지구를 위한 설계
-                                                어디든 갈 수 있는 견고한 내구성 305mm의 트래블과 406mm의 최저 지상고를 보장하는 전자 어댑티브 에어 서스펜션이 있기에
-                                                어떤 주행 환경에서도 거뜬합니다.
-                                            </p>
-                                        </div>
+                            지구를 위한 설계
+                            어디든 갈 수 있는 견고한 내구성 305mm의 트래블과 406mm의 최저 지상고를 보장하는 전자 어댑티브 에어 서스펜션이 있기에
+                            어떤 주행 환경에서도 거뜬합니다.
+                        </p>
+                    </div>
 
-                                        <div class="el-btn">
-                                            <a href="#" class="cm--btn-more">자세히 보기 ></a>
-                                        </div>
+                    <div class="el-btn">
+                        <a href="#" class="cm--btn-more">자세히 보기 ></a>
+                    </div>
 
-                                    </div>
+                </div>
 
-                                    <!-- image card -->
-                                    <div class="card-carousel">
-                                        <div class="swiper-container">
-                                            <!-- card -->
+                <!-- image card -->
+                <div class="card-carousel">
+                    <div class="card-container">
+                        <!-- card -->
 
-                                            <!-- active -->
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide swiper-slide-active">
-                                                    <div class="visual-image">
-                                                        <img src="./img/Cybertruck1.png" a href="Cybertruck-1"></a>
-                                                    </div>
-                                                    <div class="card-title">
-                                                        <div class="el-tit">
-                                                            <p class="is-po">aaa AAA aaa</p>
-                                                            <p class="is-mo">bbb BBB bbb</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- next -->
-                                                <div class="swiper-slide swiper-slide-next">
-                                                    <div class="visual-image">
-                                                        <img src="./img/Cybertruck2.png" a href="Cybertruck-2"></a>
-                                                    </div>
-                                                    <div class="card-title">
-                                                        <div class="el-tit">
-                                                            <p class="is-po">ccc CCC ccc</p>
-                                                            <p class="is-mo">ddd DDD ddd</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- 3 -->
-                                                <div class="swiper-slide">
-                                                    <div class="visual-image">
-                                                        <img src="./img/Cybertruck1.png" a href="Cybertruck-1"></a>
-                                                    </div>
-                                                    <div class="card-title">
-                                                        <div class="el-tit">
-                                                            <p class="is-po">eee EEE eee</p>
-                                                            <p class="is-mo">fff FFF fff</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- end -->
-                                            </div>
-                                        </div>
+                        <!-- active -->
+                        <div class="card-wrapper">
+                            <div class="card-slide card-slide-active">
+                                <div class="card-image">
+                                    <img src="./img/Cybertruck1.png" a href="Cybertruck-1"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">aaa AAA aaa</p>
+                                        <p class="is-mo">bbb BBB bbb</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- //:e layout-content 6 -->
-                        </section>
 
-
-                        <footer id="footer">
-                            <div class="inner">
-
-                                <div class="foot-con">
-                                    <div class="foot-logo"></div>
-                                    <address>
-                                        <dl>
-                                            <dt>Tesla © 2024</dt>
-                                            <dd>경기도 고양시 일산동구 탄중로 416</dd>
-
-                                            <dt>e-mail</dt>
-                                            <dd>southkorea@tesla.com</dd>
-                                    </address>
+                            <!-- next -->
+                            <div class="card-slide card-slide-next">
+                                <div class="card-image">
+                                    <img src="./img/Cybertruck2.png" a href="Cybertruck-2"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">ccc CCC ccc</p>
+                                        <p class="is-mo">ddd DDD ddd</p>
+                                    </div>
                                 </div>
                             </div>
-                        </footer>
+
+                            <!-- 3 -->
+                            <div class="card-slide">
+                                <div class="card-image">
+                                    <img src="./img/Cybertruck1.png" a href="Cybertruck-1"></a>
+                                </div>
+                                <div class="card-title">
+                                    <div class="el-tit">
+                                        <p class="is-po">eee EEE eee</p>
+                                        <p class="is-mo">fff FFF fff</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //:e card-content 6 -->
+    </section>
+
+
+    <footer id="footer">
+        <div class="inner">
+
+            <div class="foot-con">
+                <div class="foot-logo"></div>
+                <address>
+                    <dl>
+                        <dt>Tesla © 2024</dt>
+                        <dd>경기도 고양시 일산동구 탄중로 416</dd>
+
+                        <dt>e-mail</dt>
+                        <dd>southkorea@tesla.com</dd>
+                </address>
+            </div>
+        </div>
+    </footer>
 
 
 

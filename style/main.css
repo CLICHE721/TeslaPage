@@ -97,7 +97,7 @@ ul.gnb {
     background: #000;
 }
 
-.layout-content {
+.card-content {
     justify-content: center;
 
 }
@@ -190,14 +190,14 @@ ul.gnb {
 
 }
 
-.swiper-container {
+.card-container {
     position: relative;
 
     margin: 4rem 3rem;
     overflow: hidden;
 }
 
-.swiper-wrapper {
+.card-wrapper {
     position: relative;
 
     justify-content: center;
@@ -206,15 +206,15 @@ ul.gnb {
 }
 
 /*  */
-.swiper-slide {}
+.card-slide {}
 
 /*  */
-.swiper-slide .swiper-slide-active {}
+.card-slide .card-slide-active {}
 
 /*  */
-.swiper-slide .swiper-slide-next {}
+.card-slide .card-slide-next {}
 
-.visual-image img {
+.card-image img {
 
     width: auto;
     height: 500px;
